@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32422.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadFirstPattern.Decorator", "HeadFirstPattern.Decorator\HeadFirstPattern.Decorator.csproj", "{61546337-ADBE-42E2-851D-7564D8FC653C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadFirstPattern.Factory", "HeadFirstPattern.Factory\HeadFirstPattern.Factory.csproj", "{2530E7A4-E744-4021-92AB-0A1831ADAB37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{61546337-ADBE-42E2-851D-7564D8FC653C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61546337-ADBE-42E2-851D-7564D8FC653C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61546337-ADBE-42E2-851D-7564D8FC653C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2530E7A4-E744-4021-92AB-0A1831ADAB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2530E7A4-E744-4021-92AB-0A1831ADAB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2530E7A4-E744-4021-92AB-0A1831ADAB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2530E7A4-E744-4021-92AB-0A1831ADAB37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
