@@ -1,7 +1,5 @@
 ﻿#region
 
-using System.ComponentModel;
-using System.Globalization;
 using HeadFirstPattern.Factory.Fabric;
 using HeadFirstPattern.Factory.Pizzas;
 
@@ -9,18 +7,14 @@ using HeadFirstPattern.Factory.Pizzas;
 
 namespace HeadFirstPattern.Factory;
 
-public class PizzaStore
+public abstract class PizzaStore
 {
-    public SimplePizzaFactory Factory { get; set; }
-
-    public PizzaStore(SimplePizzaFactory factory) => Factory = factory;
-
-    void test()
+    public PizzaStore(SimplePizzaFactory factory)
     {
-        
+        Factory = factory;
     }
-
-    public IPizza? OrderPizza(string type)
+    public SimplePizzaFactory Factory { get; set; }
+  public IPizza? OrderPizza(string type)
     {
         var pizza = Factory.createPizza("pepperoni");
         pizza?.Prepare();
@@ -30,5 +24,5 @@ public class PizzaStore
         return pizza;
     }
 
-    
+  public abstract IPizza CreatePizza(string type);
 }

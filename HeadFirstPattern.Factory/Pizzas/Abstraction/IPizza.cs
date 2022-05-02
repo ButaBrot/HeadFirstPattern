@@ -7,4 +7,3 @@ public interface IPizza
     void Cut();
     void Box();
 }
-
