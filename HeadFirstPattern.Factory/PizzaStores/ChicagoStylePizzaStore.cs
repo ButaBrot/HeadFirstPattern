@@ -11,6 +11,14 @@ public class ChicagoStylePizzaStore:PizzaStore
 
     public override IPizza CreatePizza(string type)
     {
-        throw new NotImplementedException();
+        IPizza? pizza = type switch
+        {
+            "cheese" => new NYCheesePizza(),
+            "pepperoni" => new PepperoniPizza(),
+            "clam" => new ClamPizza(),
+            "veggie" => new VeggiePizza(),
+            _ => null
+        };
+        return pizza;
     }
 }

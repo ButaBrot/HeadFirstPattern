@@ -12,7 +12,7 @@ public class SimplePizzaFactory
     {
         IPizza? pizza = type switch
                         {
-                            "cheese"    => new CheesePizza(),
+                            "cheese"    => new NYCheesePizza(),
                             "pepperoni" => new PepperoniPizza(),
                             "clam"      => new ClamPizza(),
                             "veggie"    => new VeggiePizza(),
