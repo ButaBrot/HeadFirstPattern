@@ -9,14 +9,11 @@ namespace HeadFirstPattern.Factory;
 
 public abstract class PizzaStore
 {
-    public PizzaStore(SimplePizzaFactory factory)
-    {
-        Factory = factory;
-    }
+    
     public SimplePizzaFactory Factory { get; set; }
-    public IPizza? OrderPizza(string type)
+    public Pizza? OrderPizza(string type)
     {
-        var pizza = Factory.createPizza("pepperoni");
+        var pizza = CreatePizza(type);
         pizza?.Prepare();
         pizza?.Bake();
         pizza?.Cut();
@@ -24,5 +21,5 @@ public abstract class PizzaStore
         return pizza;
     }
 
-    public abstract IPizza CreatePizza(string type);
+    public abstract Pizza CreatePizza(string type);
 }

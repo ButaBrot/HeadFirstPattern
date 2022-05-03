@@ -1,24 +1,13 @@
 ﻿namespace HeadFirstPattern.Factory.Pizzas;
 
-public class ChicagoCheesePizza : IPizza
+public class ChicagoCheesePizza : Pizza
 {
-    public void Prepare()
+    public ChicagoCheesePizza()
     {
-        Console.WriteLine("Prepare Pizza");
+        Name = "Pizza nach Chicago-Art";
+        Dough = "Teig fuer extradicken Boden";
+        Sauce = "Datteltomatensosse";
+        Toppings.Add("Grob geriebener Mozzarellakaese");
     }
-
-    public void Bake()
-    {
-        Console.WriteLine("Bake Pizza");
-    }
-
-    public void Cut()
-    {
-        Console.WriteLine("Cut Pizza");
-    }
-
-    public void Box()
-    {
-        Console.WriteLine("Box Pizza");
-    }
+    public override void Cut() => Console.WriteLine("Schneide Pizza in quadratische Stuecke");
 }

@@ -1,24 +1,15 @@
 ﻿namespace HeadFirstPattern.Factory.Pizzas;
 
-public class NYCheesePizza : CheesePizza
+public class NYCheesePizza : Pizza
 {
-    public void Prepare()
+    public NYCheesePizza()
     {
-        Console.WriteLine("Prepare Pizza");
+        Name = "Pizza nach New Yorker Art";
+        Dough = "Teig fuer duennen Boden";
+        Sauce = "Marinara-Sosse";
+
+        Toppings.Add("Geriebener Reggionakaese");
     }
 
-    public void Bake()
-    {
-        Console.WriteLine("Bake Pizza");
-    }
-
-    public void Cut()
-    {
-        Console.WriteLine("Cut Pizza");
-    }
-
-    public void Box()
-    {
-        Console.WriteLine("Box Pizza");
-    }
+        
 }

@@ -1,6 +1,6 @@
 ﻿namespace HeadFirstPattern.Factory.Pizzas;
 
-public abstract class VeggiePizza : IPizza
+public abstract class VeggiePizza : Pizza
 {
     public void Prepare()
     {

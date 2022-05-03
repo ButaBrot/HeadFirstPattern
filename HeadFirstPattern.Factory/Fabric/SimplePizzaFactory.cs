@@ -8,14 +8,14 @@ namespace HeadFirstPattern.Factory.Fabric;
 
 public class SimplePizzaFactory
 {
-    public IPizza? createPizza(string type)
+    public Pizza? createPizza(string type)
     {
-        IPizza? pizza = type switch
+        Pizza? pizza = type switch
                         {
                             "cheese"    => new NYCheesePizza(),
-                            "pepperoni" => new PepperoniPizza(),
-                            "clam"      => new ClamPizza(),
-                            "veggie"    => new VeggiePizza(),
+                            //"pepperoni" => new PepperoniPizza(),
+                            //"clam"      => new ClamPizza(),
+                            //"veggie"    => new VeggiePizza(),
                             _           => null
                         };
         return pizza;
