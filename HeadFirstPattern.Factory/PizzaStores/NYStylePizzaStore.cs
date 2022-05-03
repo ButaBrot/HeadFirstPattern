@@ -14,9 +14,9 @@ public class NYStylePizzaStore:PizzaStore
         IPizza? pizza = type switch
         {
             "cheese" => new NYCheesePizza(),
-            "pepperoni" => new PepperoniPizza(),
-            "clam" => new ClamPizza(),
-            "veggie" => new VeggiePizza(),
+            "pepperoni" => new NYPepperoniPizza(),
+            "clam" => new NYClamPizza(),
+            "veggie" => new NYVeggiePizza(),
             _ => null
         };
         return pizza;

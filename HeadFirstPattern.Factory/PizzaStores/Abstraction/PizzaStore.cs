@@ -14,7 +14,7 @@ public abstract class PizzaStore
         Factory = factory;
     }
     public SimplePizzaFactory Factory { get; set; }
-  public IPizza? OrderPizza(string type)
+    public IPizza? OrderPizza(string type)
     {
         var pizza = Factory.createPizza("pepperoni");
         pizza?.Prepare();
@@ -24,5 +24,5 @@ public abstract class PizzaStore
         return pizza;
     }
 
-  public abstract IPizza CreatePizza(string type);
+    public abstract IPizza CreatePizza(string type);
 }

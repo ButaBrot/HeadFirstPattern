@@ -1,6 +1,6 @@
 ﻿namespace HeadFirstPattern.Factory.Pizzas;
 
-public class ClamPizza : IPizza
+public abstract class ClamPizza : IPizza
 {
     public void Prepare()
     {

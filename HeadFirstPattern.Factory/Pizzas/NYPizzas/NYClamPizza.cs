@@ -1,6 +1,6 @@
 ﻿namespace HeadFirstPattern.Factory.Pizzas;
 
-public class NYClamPizza : IPizza
+public class NYClamPizza : ClamPizza
 {
     public void Prepare()
     {

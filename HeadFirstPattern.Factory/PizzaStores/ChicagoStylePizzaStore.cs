@@ -13,10 +13,10 @@ public class ChicagoStylePizzaStore:PizzaStore
     {
         IPizza? pizza = type switch
         {
-            "cheese" => new NYCheesePizza(),
-            "pepperoni" => new PepperoniPizza(),
-            "clam" => new ClamPizza(),
-            "veggie" => new VeggiePizza(),
+            "cheese" => new ChicagoCheesePizza(),
+            "pepperoni" => new ChicagoPepperoniPizza(),
+            "clam" => new ChicagoClamPizza(),
+            "veggie" => new ChicagoVeggiePizza(),
             _ => null
         };
         return pizza;
