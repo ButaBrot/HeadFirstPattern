@@ -1,5 +1,4 @@
-﻿using HeadFirstPattern.Factory.Fabric;
-using HeadFirstPattern.Factory.Pizzas;
+﻿using HeadFirstPattern.Factory.Pizzas;
 
 namespace HeadFirstPattern.Factory.PizzaStores;
 
